@@ -54,7 +54,7 @@ export default function PriceChart({ coinId, coinName }: { coinId: string | null
                     </linearGradient>                        
                 </defs>
                 <XAxis
-                    dataKey="timestamp"
+                    dataKey="timeStamp"
                     tickFormatter={(time) => new Date(time).toLocaleDateString('en-US', { month: 'short', day: 'numeric'})}
                     stroke='#888888'
                     fontSize={12}
