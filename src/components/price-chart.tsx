@@ -5,11 +5,19 @@ import { Area, AreaChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YA
 import { getHistoricalChartData } from '@/lib/api';
 import { useMemo } from 'react';
 
-const CustomTooltip = ({ active, payload, label }: any) => {
+type CustomTooltipProps = {
+    active?: boolean;
+    payload?: {
+        value: number;
+    }[];
+    label?: number;
+}
+
+const CustomTooltip = ({ active, payload, label }: CustomTooltipProps) => {
     if(active && payload && payload.length) {
         return (
             <div className='p-2 bg-slate-900 border border-slate-700 rounded-lg shadow-lg'>
-                <p className='text-sm text-white'>{new Date(label).toLocaleDateString()}</p>
+                <p className='text-sm text-white'>{new Date(label || 0).toLocaleDateString()}</p>
                 <p className='text-sm font-bold text-cyan-500'>{`Price: $${payload[0].value.toFixed(2)}`}</p>
             </div>
         )
