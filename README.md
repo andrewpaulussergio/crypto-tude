@@ -31,11 +31,11 @@ Next.js App Router & Hybrid Rendering
 
 Utilized Server Components for fast, SEO-friendly initial page loads and Client Components for rich, stateful interactivity. This hybrid approach combines the best of server-side and client-side rendering.
 
-Robust Server State Management
+**Robust Server State Management**
 
 Leveraged TanStack Query to handle all asynchronous data fetching, caching, and polling. This eliminated complex manual state management (useState/useEffect chains) and prevented redundant API calls, leading to a more performant and predictable application.
 
-End-to-End Type Safety
+**End-to-End Type Safety**
 
 Enforced a strict TypeScript configuration across the entire codebase. This guarantees type safety from the API data contracts to the individual component props, resulting in a bug-resistant, self-documenting, and highly maintainable application.
 
@@ -49,11 +49,9 @@ Bash
 git clone https://github.com/your-username/crypto-tude.git
 cd crypto-tude
 Install dependencies:
-
 Bash
-npm install
-Run the development server:
+npm install @tanstack/react-query @tanstack/react-query-devtools recharts clsx tailwind-merge
 
+Run the development server:
 Bash
 npm run dev
-The application will be available at http://localhost:3000
