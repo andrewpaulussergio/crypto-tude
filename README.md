@@ -1,7 +1,7 @@
 CryptoTude: A Real-Time Crypto Analytics Dashboard
 A high-performance, data-driven web application built with a modern, type-safe architecture to deliver real-time cryptocurrency market insights.
 
-Navigate: 🚀 [!Live Demo](https://crypto-tude.vercel.app/) | 🧠 Architectural Highlights | 🛠️ Tech Stack
+Navigate: 🚀 [Live Demo](https://crypto-tude.vercel.app/) | 🧠 [Architectural Highlights](#-architectural-highlights)
 
 ## Why This Project Matters
 
